@@ -1,0 +1,12 @@
+*.log*
+dist
+packages/assets/image.*
+packages/assets/plugin.*
+node_modules
+package-lock.json
+yarn.lock
+
+.*
+!.editorconfig
+!.gitattributes
+!.gitignore

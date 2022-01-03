@@ -1,0 +1,19 @@
+{
+  "include": ["src/*.ts", "src/lib/squoosh.ts", "src/lib/http.d.ts", "src/lib/squoosh_lib.d.ts", "src/lib/posix.ts"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "declaration": true,
+    "declarationDir": ".",
+    "declarationMap": false,
+    "esModuleInterop": true,
+    "exactOptionalPropertyTypes": true,
+    "module": "ES2020",
+    "moduleResolution": "node",
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "target": "ES2021"
+  }
+}

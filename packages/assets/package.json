@@ -1,0 +1,80 @@
+{
+  "name": "@astropub/assets",
+  "description": "Assets plugin for Astro",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./plugin.js",
+      "types": "./plugin.d.ts"
+    },
+    "./plugin": {
+      "import": "./plugin.js",
+      "types": "./plugin.d.ts"
+    },
+    "./image": {
+      "import": "./image.js",
+      "types": "./image.d.ts"
+    }
+  },
+  "main": "mod.js",
+  "types": "mod.d.ts",
+  "files": [
+    "mod.d.ts",
+    "mod.js",
+    "mod.js.map"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "keywords": [
+    "assets",
+    "images",
+    "squoosh",
+    "vite"
+  ],
+  "license": "(CC0-1.0 and Apache-2.0)",
+  "repository": "astro-community/assets",
+  "author": "Jonathan Neal <jonathantneal@hotmail.com>",
+  "contributors": [
+    "Jonathan Neal (https://github.com/jonathantneal)",
+    "Google Chrome Developers (https://github.com/GoogleChromeLabs)"
+  ],
+  "bugs": "https://github.com/astro-community/assets/issues",
+  "homepage": "https://github.com/astro-community/assets#readme",
+  "dependencies": {
+    "@squoosh/lib": "^0.4.0"
+  },
+  "devDependencies": {
+    "@astropub/webapi": "^0.7.4",
+    "@rollup/plugin-typescript": "^8.3.0",
+    "rollup": "^2.61.1",
+    "typescript": "^4.5.4",
+    "vite": "^2.7.6"
+  },
+  "scripts": {
+    "build": "node run/build.js",
+    "release": "npm publish --access public"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "useTabs": true,
+    "overrides": [
+      {
+        "files": [
+          ".stackblitzrc",
+          "*.json"
+        ],
+        "options": {
+          "useTabs": false
+        }
+      }
+    ]
+  },
+  "volta": {
+    "node": "16.13.1",
+    "npm": "8.3.0"
+  }
+}
