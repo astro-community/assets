@@ -1,4 +1,4 @@
-import { assets } from '@astropub/assets'
+import { assetsPlugin } from '@astropub/assets'
 
 // @ts-check
 export default /** @type {import('astro').AstroUserConfig} */ ({
@@ -9,7 +9,7 @@ export default /** @type {import('astro').AstroUserConfig} */ ({
 	// },
 	vite: {
 		plugins: [
-			assets()
+			assetsPlugin()
 		]
 	},
 });

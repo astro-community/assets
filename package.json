@@ -8,15 +8,15 @@
     "packages/*"
   ],
   "scripts": {
-    "prestart": "npm run --prefix packages/assets build",
     "start": "astro --project-root demo dev",
     "build": "astro --project-root demo build",
     "serve": "astro --project-root demo preview",
     "package:build": "npm run --prefix packages/assets build",
-    "package:serve": "npm publish --access public"
+    "package:release": "npm run --prefix packages/assets publish --access public"
   },
   "devDependencies": {
-    "astro": "^0.22.3",
+    "@astropub/webapi": "^0.10.2",
+    "astro": "^0.22.10",
     "tslib": "^2.3.1",
     "typescript": "^4.5.4"
   },
